@@ -18,7 +18,6 @@ class LinkedList:
         self.head = None  # Stores a node, that corresponds to our fist node in th list
         self.tail = None  # Stores a node that is the end of the list
 
-
     def add_to_head(self, value):
         # create a node to add
         new_node = Node(value)
@@ -32,7 +31,6 @@ class LinkedList:
             # move head to new ndoe
             self.head = new_node
 
-
     def add_to_tail(self, value):
         # create a node to add
         new_node = Node(value)
@@ -44,7 +42,6 @@ class LinkedList:
             # Point the node at the current tail, to the new node
             self.tail.ne3xt_node = new_node
             self.tail = new_node
-
 
     # remove the head and return its value
     def remove_head(self):
@@ -61,7 +58,6 @@ class LinkedList:
         head_value = self.head.value
         self.head = self.head.next_node
         return head_value
-
 
     def contains(self, value):
         if self.head is None:
@@ -85,7 +81,6 @@ linked_list.add_to_head(0)
 linked_list.add_to_tail(1)
 print(f'does our LL contain 0? {linked_list.contains(0)}')
 print(f'does our LL contain 1? {linked_list.contains(1)}')
-
 
 linked_list.add_to_head(2)
 print(f'the start of the list is {linked_list.head.value}')
