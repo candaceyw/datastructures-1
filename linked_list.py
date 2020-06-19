@@ -40,7 +40,7 @@ class LinkedList:
             self.tail = new_node
         else:
             # Point the node at the current tail, to the new node
-            self.tail.ne3xt_node = new_node
+            self.tail.next_node = new_node
             self.tail = new_node
 
     # remove the head and return its value
